@@ -1,0 +1,51 @@
+h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.mat-button-disabled {
+  opacity: .6;
+}
+
+.dialog {
+  &-container {
+    padding: 8px;
+    max-width: 34rem;
+  }
+
+  &-form {
+    padding: 9px 8px;
+  }
+
+  &-fields {
+    padding: 18px 24px;
+  }
+
+  &-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn {
+      font-size: 16px;
+      font-weight: 400;
+      padding: 8px 20px;
+      border-radius: 6px;
+      color: #fff;
+
+      &-primary {
+        background-color: #3b82f6;
+        border: 1px solid #3B82F6;
+      }
+
+      &-secondary {
+        background-color: #64748b;
+        border: 1px solid #64748b;
+      }
+    }
+  }
+}

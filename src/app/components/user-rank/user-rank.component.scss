@@ -1,0 +1,77 @@
+table {
+  width: 100%
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.user {
+  &-container {
+    padding: 1rem;
+  }
+
+  &-header {
+    padding: 3rem 2rem;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+  }
+
+  &-add {
+    display: flex;
+    justify-content: flex-end;
+    margin: 16px 0;
+
+    button {
+      color: #fff;
+      background-color: #3b82f6;
+      padding: .75rem 2rem;
+      font-size: 1rem;
+      transition: background-color .2s,color .2s,border-color .2s,box-shadow .2s;
+      border-radius: 6px;
+    }
+  }
+
+  &-actions {
+    position: absolute;
+    top: 0;
+    right: 8px;
+  }
+
+  &-table {
+    &::ng-deep {
+      th {
+        background-color: #f8f9fa;
+        font-size: 1rem;
+        font-weight: 700;
+        transition: box-shadow .2s;
+        color: #343a40;
+      }
+      td {
+        font-weight: 400;
+        font-size: 1rem;
+        color: #495057;
+
+        &.cdk-column {
+          &-userrank {
+            width: 14rem;
+          }
+
+          &-username {
+          }
+
+          &-usernetPoints {
+            width: 14rem;
+          }
+
+          &-useractions {
+            width: 28rem;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}
